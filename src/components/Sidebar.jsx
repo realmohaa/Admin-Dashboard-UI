@@ -1,5 +1,17 @@
 import styled from "styled-components";
-import { AttachMoney, BarChart, ChatBubbleOutline, DynamicFeed, Home, MailOutline, PermIdentity, Report, Storefront, Timeline, TrendingUp, WorkOutline } from "@material-ui/icons";
+import { 
+    AttachMoney,
+    BarChart,
+    ChatBubbleOutline,
+    DynamicFeed,
+    Home,
+    MailOutline,
+    PermIdentity,
+    Report,
+    Storefront,
+    Timeline,
+    TrendingUp,
+    WorkOutline } from "@material-ui/icons";
 
 const Container = styled.div`
     flex: 1;

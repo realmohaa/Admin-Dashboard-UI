@@ -1,14 +1,11 @@
 import Navbar from "./components/Navbar";
 import styled from "styled-components";
 import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
 
 const Container = styled.div`
   display: flex;
-  margin-top: 10px
-`
-
-const Page = styled.div`
-  flex: 5;
+  margin-top: 20px
 `
 
 function App() {
@@ -17,9 +14,7 @@ function App() {
       <Navbar/>
       <Container>
         <Sidebar/>
-        <Page>
-          other
-        </Page>
+        <Home/>
       </Container>
     </div>
   );

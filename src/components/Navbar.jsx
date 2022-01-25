@@ -24,7 +24,7 @@ const Left = styled.div``
 const Logo = styled.span`
     font-weight: bold;
     font-size: 25px;
-    color: darkblue;
+    color: #000;
     cursor: pointer;
 `
 
