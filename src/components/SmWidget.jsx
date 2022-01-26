@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Visibility } from "@material-ui/icons";
-import { Icon } from "@material-ui/core";
 
 const Container = styled.div`
     flex: 1;

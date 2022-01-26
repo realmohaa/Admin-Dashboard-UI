@@ -18,6 +18,9 @@ const Table = styled.table`
     width: 100%;
     border-spacing: 20px;
 `
+const TableHead = styled.thead``
+
+const TableBody = styled.tbody``
 
 const TableRow = styled.tr``
 
@@ -52,25 +55,28 @@ const LgWidget = () => {
         <Container>
         <Title>Recent Transactions:</Title>
         <Table>
-            <TableRow>
-                <TableHeader>Customer</TableHeader>
-                <TableHeader>Date</TableHeader>
-                <TableHeader>Amount</TableHeader>
-                <TableHeader>Status</TableHeader>
-            </TableRow>
-            <TableRow>
-                <UserData>
-                    <UserAvatar src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"/>
-                    <Name>Mohammed Aziz</Name>
-                </UserData>
-                <Date>25 Jan 2022</Date>
-                <Amount>560 AED</Amount>
-                <Status>
-                    <Button type="Approved"/>
-                </Status>
-            </TableRow>
+            <TableHead>
+                <TableRow>
+                    <TableHeader>Customer</TableHeader>
+                    <TableHeader>Date</TableHeader>
+                    <TableHeader>Amount</TableHeader>
+                    <TableHeader>Status</TableHeader>
+                </TableRow>
+            </TableHead>
+            <TableBody>
+                <TableRow>
+                    <UserData>
+                        <UserAvatar src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"/>
+                        <Name>Mohammed Aziz</Name>
+                    </UserData>
+                    <Date>25 Jan 2022</Date>
+                    <Amount>560 AED</Amount>
+                    <Status>
+                        <Button type="Approved"/>
+                    </Status>
+                </TableRow>
 
-            <TableRow>
+                <TableRow>
                 <UserData>
                     <UserAvatar src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"/>
                     <Name>John Doe</Name>
@@ -93,6 +99,7 @@ const LgWidget = () => {
                     <Button type="Declined"/>
                 </Status>
             </TableRow>
+            </TableBody>
         </Table>
     </Container>
     );
