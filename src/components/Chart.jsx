@@ -10,8 +10,8 @@ import {
 
 const Container = styled.div`
     padding: 20px;
-    margin: 20px;
-    border-radius: .5em;
+    margin: 40px;
+    border-radius: .8em;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.15); 
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,.15);
 `

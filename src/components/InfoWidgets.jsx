@@ -4,13 +4,14 @@ import { TrendingDown, TrendingUp } from "@material-ui/icons";
 const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
+    margin: 0 40px;
 `
 const Widget = styled.div`
     width: 100%;
     flex: 1;
-    margin: 15px 20px;
+    margin: 5px 10px;
     padding: 35px 30px;
-    border-radius: .5em;
+    border-radius: .8em;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.15); 
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,.15);
 `

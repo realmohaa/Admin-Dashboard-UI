@@ -4,7 +4,7 @@ import InfoWidgets from "../components/InfoWidgets";
 import { salesData } from '../SalesData';
 
 const Container = styled.div`
-    flex: 5;
+    flex: 4;
 `
 
 const Home = () => {

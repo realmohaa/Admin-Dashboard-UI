@@ -46,6 +46,12 @@ const UserAvatar = styled.img`
 const IconContainer = styled.div`
     margin-right: 15px;
     color: #555;
+    display: flex;
+    align-items: center;
+    transition: all .1s ease-in-out;
+    &:hover, &:active {
+        transform: scale(1.15);
+    }
 `
 
 const Navbar = () => {
