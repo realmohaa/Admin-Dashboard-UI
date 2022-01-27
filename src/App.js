@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import styled from "styled-components";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UsersList from "./pages/UsersList";
 
 const Container = styled.div`
   display: flex;
@@ -10,13 +12,16 @@ const Container = styled.div`
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar/>
       <Container>
         <Sidebar/>
-        <Home/>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/users" element={<UsersList />}/>
+        </Routes>
       </Container>
-    </div>
+    </BrowserRouter>
   );
 }
 

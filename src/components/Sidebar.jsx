@@ -12,6 +12,7 @@ import {
     Timeline,
     TrendingUp,
     WorkOutline } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     flex: 1;
@@ -59,7 +60,7 @@ const Sidebar = () => {
               <SidebarMenu>
                   <SidebarTitle>Dashboard</SidebarTitle>
                   <SidebarList>
-                      <SidebarListItem><Icon><Home/></Icon> Home</SidebarListItem>
+                      <Link to="/"><SidebarListItem><Icon><Home/></Icon> Home</SidebarListItem></Link>
                       <SidebarListItem><Icon><Timeline/></Icon> Analytics</SidebarListItem>
                       <SidebarListItem><Icon><TrendingUp/></Icon> Sales</SidebarListItem>
                   </SidebarList>
@@ -68,7 +69,7 @@ const Sidebar = () => {
               <SidebarMenu>
                   <SidebarTitle>Quick Menu</SidebarTitle>
                   <SidebarList>
-                      <SidebarListItem><Icon><PermIdentity/></Icon> Users</SidebarListItem>
+                      <Link to="/users"><SidebarListItem><Icon><PermIdentity/></Icon> Users</SidebarListItem></Link>
                       <SidebarListItem><Icon><Storefront/></Icon> Products</SidebarListItem>
                       <SidebarListItem><Icon><AttachMoney/></Icon> Transactions</SidebarListItem>
                       <SidebarListItem><Icon><BarChart/></Icon> Reports</SidebarListItem>

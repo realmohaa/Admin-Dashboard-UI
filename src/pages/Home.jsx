@@ -3,7 +3,7 @@ import Chart from "../components/Chart";
 import InfoWidgets from "../components/InfoWidgets";
 import LgWidget from "../components/LgWidget";
 import SmWidget from "../components/SmWidget";
-import { salesData } from '../SalesData';
+import { salesData } from '../DummyData';
 
 const Container = styled.div`
     flex: 4;
