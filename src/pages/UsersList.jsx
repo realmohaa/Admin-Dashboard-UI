@@ -56,7 +56,7 @@ const UsersList = () => {
       { field: 'actions', headerName: 'Actions', width: 150, sortable: false, renderCell: (params)=>{
         return (
           <>
-          <Link to={"/users/" + params.row.id}>
+          <Link to={"/user/" + params.row.id}>
             <Button>Edit</Button>
           </Link>
             <DeleteOutline className="actionIcon" onClick={() => handleDelete(params.row.id)}/>
