@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UsersList from "./pages/UsersList";
 import User from "./pages/User";
 import AddUser from "./pages/AddUser";
+import ProductList from "./pages/ProductList";
 
 const Container = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ function App() {
           <Route path="/users" element={<UsersList />}/>
           <Route path="/user/:userId" element={<User />}/>
           <Route path="/addUser" element={<AddUser />}/>
+          <Route path="/products" element={<ProductList />}/>
         </Routes>
       </Container>
     </BrowserRouter>

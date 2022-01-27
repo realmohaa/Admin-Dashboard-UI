@@ -70,7 +70,7 @@ const Sidebar = () => {
                   <SidebarTitle>Quick Menu</SidebarTitle>
                   <SidebarList>
                       <Link to="/users"><SidebarListItem><Icon><PermIdentity/></Icon> Users</SidebarListItem></Link>
-                      <SidebarListItem><Icon><Storefront/></Icon> Products</SidebarListItem>
+                      <Link to="/products"><SidebarListItem><Icon><Storefront/></Icon> Products</SidebarListItem></Link>
                       <SidebarListItem><Icon><AttachMoney/></Icon> Transactions</SidebarListItem>
                       <SidebarListItem><Icon><BarChart/></Icon> Reports</SidebarListItem>
                   </SidebarList>
