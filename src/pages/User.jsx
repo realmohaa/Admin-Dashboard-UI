@@ -1,27 +1,10 @@
 import { CalendarToday, Image, LocationCity, MailOutline, PermIdentity, Phone } from "@material-ui/icons";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import TopElements from "../components/TopElements";
 
 const Container = styled.div`
     flex: 4;
     margin: 0 20px;
-`
-
-const TopElementsContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`
-const Title = styled.h1``
-const Button = styled.button`
-    width: 80px;
-    border: none;
-    padding: 8px;
-    background-color: #3BB077;
-    color: #FFF;
-    border-radius: .7em;
-    font-size: 15px;
-    cursor: pointer;
 `
 
 const UserContainer = styled.div`
@@ -141,14 +124,21 @@ const ImgUploadLabel = styled.label`
     padding: 10px;
 `
 
+const Button = styled.button`
+    width: 80px;
+    border: none;
+    padding: 8px;
+    background-color: #3BB077;
+    color: #FFF;
+    border-radius: .7em;
+    font-size: 15px;
+    cursor: pointer;
+`
+
 const User = () => {
   return (
       <Container>
-          <TopElementsContainer>
-              <Title>Edit User:</Title>
-              <Link to="/AddUser"><Button>Create</Button></Link>
-          </TopElementsContainer>
-
+          <TopElements title="Edit User" buttonRoute="/AddUser"/>
           <UserContainer>
               <UserDetail>
                   <Top>

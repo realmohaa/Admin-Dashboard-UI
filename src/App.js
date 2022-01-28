@@ -7,6 +7,7 @@ import UsersList from "./pages/UsersList";
 import User from "./pages/User";
 import AddUser from "./pages/AddUser";
 import ProductList from "./pages/ProductList";
+import Product from "./pages/Product";
 
 const Container = styled.div`
   display: flex;
@@ -25,6 +26,7 @@ function App() {
           <Route path="/user/:userId" element={<User />}/>
           <Route path="/addUser" element={<AddUser />}/>
           <Route path="/products" element={<ProductList />}/>
+          <Route path="/product/:productId" element={<Product />}/>
         </Routes>
       </Container>
     </BrowserRouter>

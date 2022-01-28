@@ -73,7 +73,7 @@ const ProductList = () => {
       renderCell: (params) => {
         return (
             <>
-            <Link to={"/products/" + params.row.id}>
+            <Link to={"/product/" + params.row.id}>
               <Button>Edit</Button>
             </Link>
               <DeleteOutline className="actionIcon" onClick={() => handleDelete(params.row.id)}/>
