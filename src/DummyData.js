@@ -52,15 +52,19 @@ export const salesData = [
 export const productData = [
     {
       name: "Jan",
-      "Sales": 4000,
+      "Sales": 345,
     },
     {
       name: "Feb",
-      "Sales": 3000,
+      "Sales": 567,
     },
     {
       name: "Mar",
-      "Sales": 5000,
+      "Sales": 1456,
+    },
+    {
+    name: "April",
+    "Sales": 234,
     },
 ];
 

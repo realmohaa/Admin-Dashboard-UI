@@ -134,7 +134,7 @@ const Product = () => {
         <TopElements title="Edit Product" buttonRoute="/addProduct"/>
           <Top>
             <Left>
-              <Chart data={productData} dataKey="Sales" title="Sales Performance"/>
+              <Chart data={productData} grid dataKey="Sales" title="Sales Performance"/>
             </Left>
             <Right>
               <DetailsTop>

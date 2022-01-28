@@ -8,6 +8,7 @@ import User from "./pages/User";
 import AddUser from "./pages/AddUser";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
+import AddProduct from "./pages/AddProduct";
 
 const Container = styled.div`
   display: flex;
@@ -27,6 +28,7 @@ function App() {
           <Route path="/addUser" element={<AddUser />}/>
           <Route path="/products" element={<ProductList />}/>
           <Route path="/product/:productId" element={<Product />}/>
+          <Route path="/addProduct" element={<AddProduct />}/>
         </Routes>
       </Container>
     </BrowserRouter>
